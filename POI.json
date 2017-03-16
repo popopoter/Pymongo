@@ -1,0 +1,117 @@
+{"_id":{"$oid":"58c15117fff2ce046447c8fa"},"kind":"Cafe","name":"Starbucks","city_id":{"$oid":"58c15117fff2ce046447c8f1"},"score":5,"avg_price":8}
+{"_id":{"$oid":"58c15117fff2ce046447c8fb"},"kind":"Cafe","name":"Royal","city_id":{"$oid":"58c15117fff2ce046447c8f1"},"score":4,"avg_price":3}
+{"_id":{"$oid":"58c15117fff2ce046447c8fc"},"kind":"Bar","name":"100 montaditos","city_id":{"$oid":"58c15117fff2ce046447c8f1"},"score":3.5,"avg_price":2}
+{"_id":{"$oid":"58c15117fff2ce046447c8fd"},"kind":"Restaurant","name":"Friday's","city_id":{"$oid":"58c15117fff2ce046447c8f1"},"score":4.5,"avg_price":10}
+{"_id":{"$oid":"58c15117fff2ce046447c8fe"},"kind":"Restaurant","name":"McDonalds","city_id":{"$oid":"58c15117fff2ce046447c8f1"},"score":2,"avg_price":6}
+{"_id":{"$oid":"58c15117fff2ce046447c8ff"},"kind":"Bar","name":"La sureña","city_id":{"$oid":"58c15117fff2ce046447c8f1"},"score":3,"avg_price":2}
+{"_id":{"$oid":"58c15117fff2ce046447c900"},"kind":"Monument","name":"Ayuntamiento","city_id":{"$oid":"58c15117fff2ce046447c8f1"},"score":4,"avg_price":3}
+{"_id":{"$oid":"58c15117fff2ce046447c901"},"kind":"Museum","name":"Museo de arte contemporaneo","city_id":{"$oid":"58c15117fff2ce046447c8f1"},"score":4,"avg_price":5}
+{"_id":{"$oid":"58c15117fff2ce046447c902"},"kind":"Museum","name":"Museo natural","city_id":{"$oid":"58c15117fff2ce046447c8f1"},"score":4.75,"avg_price":5}
+{"_id":{"$oid":"58c15117fff2ce046447c903"},"city_id":{"$oid":"58c15117fff2ce046447c8f1"},"kind":"Monument","score":5,"name":"Catedral"}
+{"_id":{"$oid":"58c15117fff2ce046447c904"},"kind":"Amusement","name":"Plaza de toros","city_id":{"$oid":"58c15117fff2ce046447c8f1"},"score":3.7,"avg_price":20}
+{"_id":{"$oid":"58c15117fff2ce046447c905"},"city_id":{"$oid":"58c15117fff2ce046447c8f1"},"kind":"Monument","score":4.8,"name":"Plaza mayor"}
+{"_id":{"$oid":"58c15117fff2ce046447c906"},"kind":"Amusement","name":"Teatro","city_id":{"$oid":"58c15117fff2ce046447c8f1"},"score":5,"avg_price":15}
+{"_id":{"$oid":"58c15117fff2ce046447c907"},"kind":"Cafe","name":"Starbucks","city_id":{"$oid":"58c15117fff2ce046447c8f2"},"score":5,"avg_price":8}
+{"_id":{"$oid":"58c15117fff2ce046447c908"},"kind":"Cafe","name":"Royal","city_id":{"$oid":"58c15117fff2ce046447c8f2"},"score":4,"avg_price":3}
+{"_id":{"$oid":"58c15117fff2ce046447c909"},"kind":"Bar","name":"100 montaditos","city_id":{"$oid":"58c15117fff2ce046447c8f2"},"score":3.5,"avg_price":2}
+{"_id":{"$oid":"58c15117fff2ce046447c90a"},"kind":"Restaurant","name":"Friday's","city_id":{"$oid":"58c15117fff2ce046447c8f2"},"score":4.5,"avg_price":10}
+{"_id":{"$oid":"58c15117fff2ce046447c90b"},"kind":"Restaurant","name":"McDonalds","city_id":{"$oid":"58c15117fff2ce046447c8f2"},"score":2,"avg_price":6}
+{"_id":{"$oid":"58c15117fff2ce046447c90c"},"kind":"Bar","name":"La sureña","city_id":{"$oid":"58c15117fff2ce046447c8f2"},"score":3,"avg_price":2}
+{"_id":{"$oid":"58c15117fff2ce046447c90d"},"kind":"Monument","name":"Ayuntamiento","city_id":{"$oid":"58c15117fff2ce046447c8f2"},"score":4,"avg_price":3}
+{"_id":{"$oid":"58c15117fff2ce046447c90e"},"kind":"Museum","name":"Museo de arte contemporaneo","city_id":{"$oid":"58c15117fff2ce046447c8f2"},"score":4,"avg_price":5}
+{"_id":{"$oid":"58c15117fff2ce046447c90f"},"kind":"Museum","name":"Museo natural","city_id":{"$oid":"58c15117fff2ce046447c8f2"},"score":4.75,"avg_price":5}
+{"_id":{"$oid":"58c15117fff2ce046447c910"},"city_id":{"$oid":"58c15117fff2ce046447c8f2"},"kind":"Monument","score":5,"name":"Catedral"}
+{"_id":{"$oid":"58c15117fff2ce046447c911"},"kind":"Amusement","name":"Plaza de toros","city_id":{"$oid":"58c15117fff2ce046447c8f2"},"score":3.7,"avg_price":20}
+{"_id":{"$oid":"58c15117fff2ce046447c912"},"city_id":{"$oid":"58c15117fff2ce046447c8f2"},"kind":"Monument","score":4.8,"name":"Plaza mayor"}
+{"_id":{"$oid":"58c15117fff2ce046447c913"},"kind":"Amusement","name":"Teatro","city_id":{"$oid":"58c15117fff2ce046447c8f2"},"score":5,"avg_price":15}
+{"_id":{"$oid":"58c15117fff2ce046447c914"},"kind":"Cafe","name":"Starbucks","city_id":{"$oid":"58c15117fff2ce046447c8f3"},"score":5,"avg_price":8}
+{"_id":{"$oid":"58c15117fff2ce046447c915"},"kind":"Cafe","name":"Royal","city_id":{"$oid":"58c15117fff2ce046447c8f3"},"score":4,"avg_price":3}
+{"_id":{"$oid":"58c15117fff2ce046447c916"},"kind":"Bar","name":"100 montaditos","city_id":{"$oid":"58c15117fff2ce046447c8f3"},"score":3.5,"avg_price":2}
+{"_id":{"$oid":"58c15117fff2ce046447c917"},"kind":"Restaurant","name":"Friday's","city_id":{"$oid":"58c15117fff2ce046447c8f3"},"score":4.5,"avg_price":10}
+{"_id":{"$oid":"58c15117fff2ce046447c918"},"kind":"Restaurant","name":"McDonalds","city_id":{"$oid":"58c15117fff2ce046447c8f3"},"score":2,"avg_price":6}
+{"_id":{"$oid":"58c15117fff2ce046447c919"},"kind":"Bar","name":"La sureña","city_id":{"$oid":"58c15117fff2ce046447c8f3"},"score":3,"avg_price":2}
+{"_id":{"$oid":"58c15117fff2ce046447c91a"},"kind":"Monument","name":"Ayuntamiento","city_id":{"$oid":"58c15117fff2ce046447c8f3"},"score":4,"avg_price":3}
+{"_id":{"$oid":"58c15117fff2ce046447c91b"},"kind":"Museum","name":"Museo de arte contemporaneo","city_id":{"$oid":"58c15117fff2ce046447c8f3"},"score":4,"avg_price":5}
+{"_id":{"$oid":"58c15117fff2ce046447c91c"},"kind":"Museum","name":"Museo natural","city_id":{"$oid":"58c15117fff2ce046447c8f3"},"score":4.75,"avg_price":5}
+{"_id":{"$oid":"58c15117fff2ce046447c91d"},"city_id":{"$oid":"58c15117fff2ce046447c8f3"},"kind":"Monument","score":5,"name":"Catedral"}
+{"_id":{"$oid":"58c15117fff2ce046447c91e"},"kind":"Amusement","name":"Plaza de toros","city_id":{"$oid":"58c15117fff2ce046447c8f3"},"score":3.7,"avg_price":20}
+{"_id":{"$oid":"58c15117fff2ce046447c91f"},"city_id":{"$oid":"58c15117fff2ce046447c8f3"},"kind":"Monument","score":4.8,"name":"Plaza mayor"}
+{"_id":{"$oid":"58c15117fff2ce046447c920"},"kind":"Amusement","name":"Teatro","city_id":{"$oid":"58c15117fff2ce046447c8f3"},"score":5,"avg_price":15}
+{"_id":{"$oid":"58c15117fff2ce046447c921"},"kind":"Cafe","name":"Starbucks","city_id":{"$oid":"58c15117fff2ce046447c8f4"},"score":5,"avg_price":8}
+{"_id":{"$oid":"58c15117fff2ce046447c922"},"kind":"Cafe","name":"Royal","city_id":{"$oid":"58c15117fff2ce046447c8f4"},"score":4,"avg_price":3}
+{"_id":{"$oid":"58c15117fff2ce046447c923"},"kind":"Bar","name":"100 montaditos","city_id":{"$oid":"58c15117fff2ce046447c8f4"},"score":3.5,"avg_price":2}
+{"_id":{"$oid":"58c15117fff2ce046447c924"},"kind":"Restaurant","name":"Friday's","city_id":{"$oid":"58c15117fff2ce046447c8f4"},"score":4.5,"avg_price":10}
+{"_id":{"$oid":"58c15117fff2ce046447c925"},"kind":"Restaurant","name":"McDonalds","city_id":{"$oid":"58c15117fff2ce046447c8f4"},"score":2,"avg_price":6}
+{"_id":{"$oid":"58c15117fff2ce046447c926"},"kind":"Bar","name":"La sureña","city_id":{"$oid":"58c15117fff2ce046447c8f4"},"score":3,"avg_price":2}
+{"_id":{"$oid":"58c15117fff2ce046447c927"},"kind":"Monument","name":"Ayuntamiento","city_id":{"$oid":"58c15117fff2ce046447c8f4"},"score":4,"avg_price":3}
+{"_id":{"$oid":"58c15117fff2ce046447c928"},"kind":"Museum","name":"Museo de arte contemporaneo","city_id":{"$oid":"58c15117fff2ce046447c8f4"},"score":4,"avg_price":5}
+{"_id":{"$oid":"58c15117fff2ce046447c929"},"kind":"Museum","name":"Museo natural","city_id":{"$oid":"58c15117fff2ce046447c8f4"},"score":4.75,"avg_price":5}
+{"_id":{"$oid":"58c15117fff2ce046447c92a"},"city_id":{"$oid":"58c15117fff2ce046447c8f4"},"kind":"Monument","score":5,"name":"Catedral"}
+{"_id":{"$oid":"58c15117fff2ce046447c92b"},"kind":"Amusement","name":"Plaza de toros","city_id":{"$oid":"58c15117fff2ce046447c8f4"},"score":3.7,"avg_price":20}
+{"_id":{"$oid":"58c15117fff2ce046447c92c"},"city_id":{"$oid":"58c15117fff2ce046447c8f4"},"kind":"Monument","score":4.8,"name":"Plaza mayor"}
+{"_id":{"$oid":"58c15117fff2ce046447c92d"},"kind":"Amusement","name":"Teatro","city_id":{"$oid":"58c15117fff2ce046447c8f4"},"score":5,"avg_price":15}
+{"_id":{"$oid":"58c15117fff2ce046447c92e"},"kind":"Cafe","name":"Starbucks","city_id":{"$oid":"58c15117fff2ce046447c8f5"},"score":5,"avg_price":8}
+{"_id":{"$oid":"58c15117fff2ce046447c92f"},"kind":"Cafe","name":"Royal","city_id":{"$oid":"58c15117fff2ce046447c8f5"},"score":4,"avg_price":3}
+{"_id":{"$oid":"58c15117fff2ce046447c930"},"kind":"Bar","name":"100 montaditos","city_id":{"$oid":"58c15117fff2ce046447c8f5"},"score":3.5,"avg_price":2}
+{"_id":{"$oid":"58c15117fff2ce046447c931"},"kind":"Restaurant","name":"Friday's","city_id":{"$oid":"58c15117fff2ce046447c8f5"},"score":4.5,"avg_price":10}
+{"_id":{"$oid":"58c15117fff2ce046447c932"},"kind":"Restaurant","name":"McDonalds","city_id":{"$oid":"58c15117fff2ce046447c8f5"},"score":2,"avg_price":6}
+{"_id":{"$oid":"58c15117fff2ce046447c933"},"kind":"Bar","name":"La sureña","city_id":{"$oid":"58c15117fff2ce046447c8f5"},"score":3,"avg_price":2}
+{"_id":{"$oid":"58c15117fff2ce046447c934"},"kind":"Monument","name":"Ayuntamiento","city_id":{"$oid":"58c15117fff2ce046447c8f5"},"score":4,"avg_price":3}
+{"_id":{"$oid":"58c15117fff2ce046447c935"},"kind":"Museum","name":"Museo de arte contemporaneo","city_id":{"$oid":"58c15117fff2ce046447c8f5"},"score":4,"avg_price":5}
+{"_id":{"$oid":"58c15117fff2ce046447c936"},"kind":"Museum","name":"Museo natural","city_id":{"$oid":"58c15117fff2ce046447c8f5"},"score":4.75,"avg_price":5}
+{"_id":{"$oid":"58c15117fff2ce046447c937"},"city_id":{"$oid":"58c15117fff2ce046447c8f5"},"kind":"Monument","score":5,"name":"Catedral"}
+{"_id":{"$oid":"58c15117fff2ce046447c938"},"kind":"Amusement","name":"Plaza de toros","city_id":{"$oid":"58c15117fff2ce046447c8f5"},"score":3.7,"avg_price":20}
+{"_id":{"$oid":"58c15117fff2ce046447c939"},"city_id":{"$oid":"58c15117fff2ce046447c8f5"},"kind":"Monument","score":4.8,"name":"Plaza mayor"}
+{"_id":{"$oid":"58c15117fff2ce046447c93a"},"kind":"Amusement","name":"Teatro","city_id":{"$oid":"58c15117fff2ce046447c8f5"},"score":5,"avg_price":15}
+{"_id":{"$oid":"58c15117fff2ce046447c93b"},"kind":"Cafe","name":"Starbucks","city_id":{"$oid":"58c15117fff2ce046447c8f6"},"score":5,"avg_price":8}
+{"_id":{"$oid":"58c15117fff2ce046447c93c"},"kind":"Cafe","name":"Royal","city_id":{"$oid":"58c15117fff2ce046447c8f6"},"score":4,"avg_price":3}
+{"_id":{"$oid":"58c15117fff2ce046447c93d"},"kind":"Bar","name":"100 montaditos","city_id":{"$oid":"58c15117fff2ce046447c8f6"},"score":3.5,"avg_price":2}
+{"_id":{"$oid":"58c15117fff2ce046447c93e"},"kind":"Restaurant","name":"Friday's","city_id":{"$oid":"58c15117fff2ce046447c8f6"},"score":4.5,"avg_price":10}
+{"_id":{"$oid":"58c15117fff2ce046447c93f"},"kind":"Restaurant","name":"McDonalds","city_id":{"$oid":"58c15117fff2ce046447c8f6"},"score":2,"avg_price":6}
+{"_id":{"$oid":"58c15117fff2ce046447c940"},"kind":"Bar","name":"La sureña","city_id":{"$oid":"58c15117fff2ce046447c8f6"},"score":3,"avg_price":2}
+{"_id":{"$oid":"58c15117fff2ce046447c941"},"kind":"Monument","name":"Ayuntamiento","city_id":{"$oid":"58c15117fff2ce046447c8f6"},"score":4,"avg_price":3}
+{"_id":{"$oid":"58c15117fff2ce046447c942"},"kind":"Museum","name":"Museo de arte contemporaneo","city_id":{"$oid":"58c15117fff2ce046447c8f6"},"score":4,"avg_price":5}
+{"_id":{"$oid":"58c15117fff2ce046447c943"},"kind":"Museum","name":"Museo natural","city_id":{"$oid":"58c15117fff2ce046447c8f6"},"score":4.75,"avg_price":5}
+{"_id":{"$oid":"58c15117fff2ce046447c944"},"city_id":{"$oid":"58c15117fff2ce046447c8f6"},"kind":"Monument","score":5,"name":"Catedral"}
+{"_id":{"$oid":"58c15117fff2ce046447c945"},"kind":"Amusement","name":"Plaza de toros","city_id":{"$oid":"58c15117fff2ce046447c8f6"},"score":3.7,"avg_price":20}
+{"_id":{"$oid":"58c15117fff2ce046447c946"},"city_id":{"$oid":"58c15117fff2ce046447c8f6"},"kind":"Monument","score":4.8,"name":"Plaza mayor"}
+{"_id":{"$oid":"58c15117fff2ce046447c947"},"kind":"Amusement","name":"Teatro","city_id":{"$oid":"58c15117fff2ce046447c8f6"},"score":5,"avg_price":15}
+{"_id":{"$oid":"58c15117fff2ce046447c948"},"kind":"Cafe","name":"Starbucks","city_id":{"$oid":"58c15117fff2ce046447c8f7"},"score":5,"avg_price":8}
+{"_id":{"$oid":"58c15117fff2ce046447c949"},"kind":"Cafe","name":"Royal","city_id":{"$oid":"58c15117fff2ce046447c8f7"},"score":4,"avg_price":3}
+{"_id":{"$oid":"58c15117fff2ce046447c94a"},"kind":"Bar","name":"100 montaditos","city_id":{"$oid":"58c15117fff2ce046447c8f7"},"score":3.5,"avg_price":2}
+{"_id":{"$oid":"58c15117fff2ce046447c94b"},"kind":"Restaurant","name":"Friday's","city_id":{"$oid":"58c15117fff2ce046447c8f7"},"score":4.5,"avg_price":10}
+{"_id":{"$oid":"58c15117fff2ce046447c94c"},"kind":"Restaurant","name":"McDonalds","city_id":{"$oid":"58c15117fff2ce046447c8f7"},"score":2,"avg_price":6}
+{"_id":{"$oid":"58c15117fff2ce046447c94d"},"kind":"Bar","name":"La sureña","city_id":{"$oid":"58c15117fff2ce046447c8f7"},"score":3,"avg_price":2}
+{"_id":{"$oid":"58c15117fff2ce046447c94e"},"kind":"Monument","name":"Ayuntamiento","city_id":{"$oid":"58c15117fff2ce046447c8f7"},"score":4,"avg_price":3}
+{"_id":{"$oid":"58c15117fff2ce046447c94f"},"kind":"Museum","name":"Museo de arte contemporaneo","city_id":{"$oid":"58c15117fff2ce046447c8f7"},"score":4,"avg_price":5}
+{"_id":{"$oid":"58c15117fff2ce046447c950"},"kind":"Museum","name":"Museo natural","city_id":{"$oid":"58c15117fff2ce046447c8f7"},"score":4.75,"avg_price":5}
+{"_id":{"$oid":"58c15117fff2ce046447c951"},"city_id":{"$oid":"58c15117fff2ce046447c8f7"},"kind":"Monument","score":5,"name":"Catedral"}
+{"_id":{"$oid":"58c15117fff2ce046447c952"},"kind":"Amusement","name":"Plaza de toros","city_id":{"$oid":"58c15117fff2ce046447c8f7"},"score":3.7,"avg_price":20}
+{"_id":{"$oid":"58c15117fff2ce046447c953"},"city_id":{"$oid":"58c15117fff2ce046447c8f7"},"kind":"Monument","score":4.8,"name":"Plaza mayor"}
+{"_id":{"$oid":"58c15117fff2ce046447c954"},"kind":"Amusement","name":"Teatro","city_id":{"$oid":"58c15117fff2ce046447c8f7"},"score":5,"avg_price":15}
+{"_id":{"$oid":"58c15117fff2ce046447c955"},"kind":"Cafe","name":"Starbucks","city_id":{"$oid":"58c15117fff2ce046447c8f8"},"score":5,"avg_price":8}
+{"_id":{"$oid":"58c15117fff2ce046447c956"},"kind":"Cafe","name":"Royal","city_id":{"$oid":"58c15117fff2ce046447c8f8"},"score":4,"avg_price":3}
+{"_id":{"$oid":"58c15117fff2ce046447c957"},"kind":"Bar","name":"100 montaditos","city_id":{"$oid":"58c15117fff2ce046447c8f8"},"score":3.5,"avg_price":2}
+{"_id":{"$oid":"58c15117fff2ce046447c958"},"kind":"Restaurant","name":"Friday's","city_id":{"$oid":"58c15117fff2ce046447c8f8"},"score":4.5,"avg_price":10}
+{"_id":{"$oid":"58c15117fff2ce046447c959"},"kind":"Restaurant","name":"McDonalds","city_id":{"$oid":"58c15117fff2ce046447c8f8"},"score":2,"avg_price":6}
+{"_id":{"$oid":"58c15117fff2ce046447c95a"},"kind":"Bar","name":"La sureña","city_id":{"$oid":"58c15117fff2ce046447c8f8"},"score":3,"avg_price":2}
+{"_id":{"$oid":"58c15117fff2ce046447c95b"},"kind":"Monument","name":"Ayuntamiento","city_id":{"$oid":"58c15117fff2ce046447c8f8"},"score":4,"avg_price":3}
+{"_id":{"$oid":"58c15117fff2ce046447c95c"},"kind":"Museum","name":"Museo de arte contemporaneo","city_id":{"$oid":"58c15117fff2ce046447c8f8"},"score":4,"avg_price":5}
+{"_id":{"$oid":"58c15117fff2ce046447c95d"},"kind":"Museum","name":"Museo natural","city_id":{"$oid":"58c15117fff2ce046447c8f8"},"score":4.75,"avg_price":5}
+{"_id":{"$oid":"58c15117fff2ce046447c95e"},"city_id":{"$oid":"58c15117fff2ce046447c8f8"},"kind":"Monument","score":5,"name":"Catedral"}
+{"_id":{"$oid":"58c15117fff2ce046447c95f"},"kind":"Amusement","name":"Plaza de toros","city_id":{"$oid":"58c15117fff2ce046447c8f8"},"score":3.7,"avg_price":20}
+{"_id":{"$oid":"58c15117fff2ce046447c960"},"city_id":{"$oid":"58c15117fff2ce046447c8f8"},"kind":"Monument","score":4.8,"name":"Plaza mayor"}
+{"_id":{"$oid":"58c15117fff2ce046447c961"},"kind":"Amusement","name":"Teatro","city_id":{"$oid":"58c15117fff2ce046447c8f8"},"score":5,"avg_price":15}
+{"_id":{"$oid":"58c15117fff2ce046447c962"},"kind":"Cafe","name":"Starbucks","city_id":{"$oid":"58c15117fff2ce046447c8f9"},"score":5,"avg_price":8}
+{"_id":{"$oid":"58c15117fff2ce046447c963"},"kind":"Cafe","name":"Royal","city_id":{"$oid":"58c15117fff2ce046447c8f9"},"score":4,"avg_price":3}
+{"_id":{"$oid":"58c15117fff2ce046447c964"},"kind":"Bar","name":"100 montaditos","city_id":{"$oid":"58c15117fff2ce046447c8f9"},"score":3.5,"avg_price":2}
+{"_id":{"$oid":"58c15117fff2ce046447c965"},"kind":"Restaurant","name":"Friday's","city_id":{"$oid":"58c15117fff2ce046447c8f9"},"score":4.5,"avg_price":10}
+{"_id":{"$oid":"58c15117fff2ce046447c966"},"kind":"Restaurant","name":"McDonalds","city_id":{"$oid":"58c15117fff2ce046447c8f9"},"score":2,"avg_price":6}
+{"_id":{"$oid":"58c15117fff2ce046447c967"},"kind":"Bar","name":"La sureña","city_id":{"$oid":"58c15117fff2ce046447c8f9"},"score":3,"avg_price":2}
+{"_id":{"$oid":"58c15117fff2ce046447c968"},"kind":"Monument","name":"Ayuntamiento","city_id":{"$oid":"58c15117fff2ce046447c8f9"},"score":4,"avg_price":3}
+{"_id":{"$oid":"58c15117fff2ce046447c969"},"kind":"Museum","name":"Museo de arte contemporaneo","city_id":{"$oid":"58c15117fff2ce046447c8f9"},"score":4,"avg_price":5}
+{"_id":{"$oid":"58c15117fff2ce046447c96a"},"kind":"Museum","name":"Museo natural","city_id":{"$oid":"58c15117fff2ce046447c8f9"},"score":4.75,"avg_price":5}
+{"_id":{"$oid":"58c15117fff2ce046447c96b"},"city_id":{"$oid":"58c15117fff2ce046447c8f9"},"kind":"Monument","score":5,"name":"Catedral"}
+{"_id":{"$oid":"58c15117fff2ce046447c96c"},"kind":"Amusement","name":"Plaza de toros","city_id":{"$oid":"58c15117fff2ce046447c8f9"},"score":3.7,"avg_price":20}
+{"_id":{"$oid":"58c15117fff2ce046447c96d"},"city_id":{"$oid":"58c15117fff2ce046447c8f9"},"kind":"Monument","score":4.8,"name":"Plaza mayor"}
+{"_id":{"$oid":"58c15117fff2ce046447c96e"},"kind":"Amusement","name":"Teatro","city_id":{"$oid":"58c15117fff2ce046447c8f9"},"score":5,"avg_price":15}
