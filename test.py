@@ -1,5 +1,4 @@
 import json
-from pymongo import  MongoClient
 
 from objects.city import city
 
@@ -14,6 +13,7 @@ with open('wikicity.json','r') as f:
     #print(x)
 
 client = MongoClient('mongodb://localhost:27017/')
+
 '''dbCity = client['wikicity'].city
 dbPOI = client['wikicity'].POI
 nuevoId = dbCity.insert([x.content for x in ciudades])
@@ -41,13 +41,17 @@ for ci in cities:
 queryCity = dbCity.find()
 
 '''
+#Ciudades por comundad
 responso = dbCity.aggregate([{'$match': {'autonomous_community':'Castilla y Leon'}},{'$project' :{'name':1,'_id':0}}])
+#Altura de ciudades por comundad
 responso = dbCity.aggregate([{'$group':{
     '_id':'$autonomous_community',
     'avgElevation':{'$avg':'$elevation'}}}])
+#densidad  media de las ciudades de una comunidad autonoma
 responso = dbCity.aggregate([{'$group':{
     '_id':'$autonomous_community',
     'avgDensity':{'$avg':{'$divide':['$population','$area']}}}}])
+
 responso = dbCity.aggregate([
     {
         '$lookup':
@@ -114,7 +118,7 @@ responso = dbCity.aggregate([
     #{'$group':{'_id':'null','avgPrice':{'$avg':'avg_price'}}}
 
 
-])\
+])
 #Ultima\
 responso = dbPoi.aggregate([
     {'$match':{'kind':'Restaurant'}},
