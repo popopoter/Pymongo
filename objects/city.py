@@ -1,5 +1,7 @@
+from Conexion import connection
 from rules import cityRules
-from pointOfInterest import pointOfInterest
+conexion= connection.Conection()
+cliente = conexion.conected()
 class city(object):
     myRules = cityRules.validNames
     def __init__(self,**args):
@@ -15,6 +17,13 @@ class city(object):
             print "Error ["+name+':'+value+"]"
     def save(self):
         if self.id is None:
-            poiContent = [x.save() for x in self.POI]
-            return [self.content,poiContent]
+            #poiContent = [x.save() for x in self.POI]
+            cliente.city.insert(self.content)
+
+        else:
+            cliente.city.update_one({'_id':self.id},{'$set':self.changed})
+            self.changed=[]
         return {k:v for k,v in self.content.iteritems() if(k in self.changed)}
+    def query(self,number):
+        pass
+

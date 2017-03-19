@@ -1,5 +1,8 @@
+from Conexion import connection
 from rules import pointOfInterestRules
 
+conexion= connection.Conection()
+cliente = conexion.conected()
 class pointOfInterest(object):
     myRules = pointOfInterestRules.validNames
 

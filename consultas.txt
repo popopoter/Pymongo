@@ -46,10 +46,10 @@ responso = dbCity.aggregate([  {'$match':{'name':'Salamanca'}},
 {'$unwind':'$poi'},
 {'$group':{'_id':'$name','avgPrice':{'$avg':'$poi.avg_price'},'minPrice':{'$min':'$poi.avg_price'},'maxPrice':{'$max':'$poi.avg_price'}}}
 ])
-#7
+#7 responso = db.city.aggregate([{"$geoNear": {"near": { "type": "Point", "coordinates": [ 40.9634385,-5.6692121] }, "distanceField": "dist.calculated", "spherical": "true"}},{$lookup:{from:"POI",localField: "_id",foreignField:"city_id",as: "cityPOI"}},{"$unwind":"$cityPOI"},{"$project":{"_id":0,"cityPOI.name":1,"name":1,"cityPOI.kind":1}},{$match:{"cityPOI.kind":"Restaurant"}}])
 
 
-#8
+#8responso = db.POI.aggregate([{$lookup:{from:"city",localField: "city_id",foreignField:"_id",as: "cityPOI"}},{$project:{"_id":0,"name":1,"kind":1,"cityPOI.name":1,"cityPOI.location":1}},{$match:{"kind":"Restaurant"}},{$match:{"cityPOI.location":{"$geoWithin": {"$centerSphere": [[40.6568861,-4.6821937],1000000]}}}},{$project: {"name":1,"kind":1,"citiPOI.location":1}},{$limit: 5}])
 
 #9
 responso = dbPoi.aggregate([
