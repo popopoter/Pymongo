@@ -1,0 +1,82 @@
+#1) responso = dbCity.aggregate([{'$match': {'autonomous_community':'Castilla y Leon'}},{'$project' :{'name':1,'_id':0}}])
+
+#2) responso = dbCity.aggregate([{'$group':{
+    '_id':'$autonomous_community',
+    'avgElevation':{'$avg':'$elevation'}}}])
+#3) responso = dbCity.aggregate([{'$group':{
+    '_id':'$autonomous_community',
+    'avgDensity':{'$avg':{'$divide':['$population','$area']}}}}])
+#4 responso = dbCity.aggregate([
+    {'$match':{'name':'Salamanca'}},
+    {
+        '$lookup':
+            {
+                'from':'POI',
+                'localField':'_id',
+                'foreignField':'city_id',
+                'as': 'poi'
+            }
+    },
+    {'$project':{'poi.kind':1,'_id':0}},
+    {'$group':{'_id':'$poi.kind'}},
+    {'$unwind':'$_id'},
+    {'$group':{'_id':'$_id','count':{'$sum':1}}}
+])
+#5 responso = dbCity.aggregate([
+    {'$match':{'name':'Salamanca'}},
+    {
+        '$lookup':
+            {
+                'from':'POI',
+                'localField':'_id',
+                'foreignField':'city_id',
+                'as': 'poi'
+            }
+    },
+    {'$project':{'poi.kind':1,'_id':0}},
+    {'$group':{'_id':'$poi.kind'}},
+    {'$unwind':'$_id'},
+    {'$group':{'_id':'$_id'}}
+
+
+])
+#6 solo medio MAL
+responso = dbCity.aggregate([  {'$match':{'name':'Salamanca'}},
+{'$lookup':{'from':'POI','localField':'_id','foreignField':'city_id','as': 'poi'}},
+{'$unwind':'$poi'},
+{'$group':{'_id':'$name','avgPrice':{'$avg':'$poi.avg_price'},'minPrice':{'$min':'$poi.avg_price'},'maxPrice':{'$max':'$poi.avg_price'}}}
+])
+#7
+
+
+#8
+
+#9
+responso = dbPoi.aggregate([
+    {'$match':{'kind':'Restaurant'}},
+	{'$lookup':
+            {
+                'from':'city',
+                'localField':'city_id',
+                'foreignField':'_id',
+                'as': 'city'
+            }},
+    {'$group': {'_id': '$name','cities':{'$addToSet':'$city.name'}}},
+	{'$project' : {'_id':1,'cities':1,'size_of_cities':{'$size':'$cities'}}},
+	{'$match': { 'size_of_cities' :{'$gt':1}}}
+])
+
+#10 responso = dbPoi.aggregate([ {$sort: {'score': -1}}, 
+{'$lookup': { 'from':'city',  'localField':'city_id',     'foreignField':'_id', 'as': 'city'    }}, 
+{'$unwind':'$city'},     
+{'$group': {'_id': '$city.name', 'POI': { '$push':{'name' :'$name', 'score':'$score'}}}},
+{'$project': {'city':'$_id','_id':0,"bestPOIs": { $slice: [ "$POI", 3]}}},
+{'$out':'POIoftheyear'}	
+	 ])
+
+#11 responso = dbPoi.aggregate([
+    {'$match':{'kind':'Restaurant'}},
+    {'$group': {'_id': '$name','count':{'$sum':1}}},
+    {'$sort':{'count':1}},
+    {'$limit': 5}
+])

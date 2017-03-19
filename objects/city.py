@@ -5,10 +5,6 @@ class city(object):
     def __init__(self,**args):
         self.id = args['_id'] if '_id' in args.keys() else None
         #self.id = args['city_id'] if 'city_id' in args.keys() else None
-
-        #Borramos los poi del dicionario si no tienen no lanza excepcion
-        self.POI =  [pointOfInterest(**poi) for poi in (args['POI'] if 'POI' in args else [])]
-        args.pop('POI', None)
         self.content = {k:v for k,v in args.iteritems() if(k in self.myRules.keys() and self.myRules.get(k)(v))}
         self.changed = []
     def update(self,name,value):
