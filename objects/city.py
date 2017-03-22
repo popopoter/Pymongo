@@ -22,8 +22,14 @@ class city(object):
 
         else:
             cliente.city.update_one({'_id':self.id},{'$set':{k:v for k,v in self.content.iteritems() if(k in self.changed)}})
+            
             self.changed=[]
-        return {k:v for k,v in self.content.iteritems() if(k in self.changed)}
+
+    """{k:v for k,v in self.content.iteritems() if(k in self.changed)}"""
     def query(self,number):
         pass
+dict={ "_id" : 'ObjectId("58cf0b76a586f62674226aca")', "name" : "Guipuzkua",  "autonomous_community": "Pais Vasco" }
+ciudad=city(**dict)
 
+
+ciudad.save();
