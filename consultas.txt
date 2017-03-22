@@ -66,7 +66,7 @@ responso = dbPoi.aggregate([
 	{'$match': { 'size_of_cities' :{'$gt':1}}}
 ])
 
-#10 responso = dbPoi.aggregate([ {$sort: {'score': -1}}, 
+#10 responso = db.POI.aggregate([ {$sort: {'score': -1}},
 {'$lookup': { 'from':'city',  'localField':'city_id',     'foreignField':'_id', 'as': 'city'    }}, 
 {'$unwind':'$city'},     
 {'$group': {'_id': '$city.name', 'POI': { '$push':{'name' :'$name', 'score':'$score'}}}},
