@@ -21,7 +21,7 @@ class city(object):
             cliente.city.insert(self.content)
 
         else:
-            cliente.city.update_one({'_id':self.id},{'$set':self.changed})
+            cliente.city.update_one({'_id':self.id},{'$set':{k:v for k,v in self.content.iteritems() if(k in self.changed)}})
             self.changed=[]
         return {k:v for k,v in self.content.iteritems() if(k in self.changed)}
     def query(self,number):
