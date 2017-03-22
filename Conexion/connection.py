@@ -7,7 +7,7 @@ class Conection(object):
     @staticmethod
     def conected():
         Conection.client= MongoClient()
-        return Conection.client.Wikiciudad
+        return Conection.client.wikicity
 lista = []
 conexion= Conection()
 cliente = conexion.conected()
