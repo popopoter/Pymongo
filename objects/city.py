@@ -23,7 +23,7 @@ class city(object):
         else:
             pairs={k: v for k, v in self.content.iteritems() if (k in self.changed)}
 
-            cliente.city.update({'name':'pene'} , {'$set':pairs})
+            cliente.city.update({'_id':self.id} , {'$set':pairs})
             self.changed=[]
     def query(self,number):
         pass
