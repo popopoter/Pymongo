@@ -118,3 +118,4 @@ def query11(tipoPOI):
     {'$limit': 5}
 ]
     return consulta
+

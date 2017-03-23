@@ -1,6 +1,6 @@
 from WikicityDB import connection
 from rules import pointOfInterestRules
-
+from Queries import consultas
 conexion= connection.Conection()
 cliente = conexion.conected()
 class PointOfInterest(object):
@@ -21,10 +21,23 @@ class PointOfInterest(object):
 
     def save(self):
         if self.id is None:
-            return self.content
-        return {k: v for k, v in self.content.iteritems() if (k in self.changed)}
+            #poiContent = [x.save() for x in self.POI]
+            cliente.POI.insert(self.content)
 
+        else:
+            if len(self.changed)>0:
+                pairs = {k: v for k, v in self.content.iteritems() if (k in self.changed)}
+                cliente.POI.update({'_id': self.id}, {'$set': pairs})
+                self.changed = []
+    @staticmethod
+    def query(string):
+        consulta= cliente.POI.aggregate(string)
+        return POIIterator(consulta)
+
+<<<<<<< HEAD
 from objects import PointOfInterest
+=======
+>>>>>>> origin/master
 class POIIterator(object):
     def __init__(self,cursor):
         self.cursor = cursor
@@ -32,8 +45,21 @@ class POIIterator(object):
     def prepareNext(self):
         nextItem= next(self.cursor,None)
         if(nextItem is not None):
+<<<<<<< HEAD
             self.__next__ = PointOfInterest.PointOfInterest(**nextItem)
+=======
+            self.__next__ = pointOfInterest(**nextItem)
+>>>>>>> origin/master
             return True
         return False
     def next(self):
         return self.__next__
+
+consulta=cliente.POI.find_one()
+poi = pointOfInterest(**consulta)
+#ciudad.update('name', 'Sevilla')
+poi.save()
+query=poi.query(consultas.query8('Cafe',40,-5,100))
+while(query.prepareNext()):
+   print query.next().content
+
