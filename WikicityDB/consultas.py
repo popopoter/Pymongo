@@ -1,7 +1,7 @@
 
 
 def query1(comunidadAutonoma):
-    consulta = [{'$match': {'autonomous_community':comunidadAutonoma}},{'$project' :{'name':1,'_id':0}}]
+    consulta = [{'$match': {'autonomous_community':comunidadAutonoma}},{'$project' :{'name':1}}]
     return consulta
 def query2(comunidadAutonoma):
     consulta = [{'$group':{
