@@ -1,9 +1,9 @@
-from Conexion import connection
+from WikicityDB import connection
 from rules import pointOfInterestRules
 
 conexion= connection.Conection()
 cliente = conexion.conected()
-class pointOfInterest(object):
+class PointOfInterest(object):
     myRules = pointOfInterestRules.validNames
 
     def __init__(self, **args):
@@ -24,7 +24,7 @@ class pointOfInterest(object):
             return self.content
         return {k: v for k, v in self.content.iteritems() if (k in self.changed)}
 
-from objects import pointOfInterest
+from objects import PointOfInterest
 class POIIterator(object):
     def __init__(self,cursor):
         self.cursor = cursor
@@ -32,7 +32,7 @@ class POIIterator(object):
     def prepareNext(self):
         nextItem= next(self.cursor,None)
         if(nextItem is not None):
-            self.__next__ = pointOfInterest.pointOfInterest(**nextItem)
+            self.__next__ = PointOfInterest.PointOfInterest(**nextItem)
             return True
         return False
     def next(self):
