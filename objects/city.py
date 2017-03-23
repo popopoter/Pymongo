@@ -42,6 +42,15 @@ class CityIterator(object):
 
 if __name__ == "__main__":
 
+    #prueba de save
+    conexion= connection.Conection()
+    cliente=conexion.conected()
+    contenido=cliente.city.find_one()
+    ciudad=City(**contenido)
+
+    ciudad.update('name','Comadreja')
+    ciudad.save()
+    #prueba de query
     query1 = City.query(consultas.query1('Castilla y Leon'))
     while(query1.prepareNext()):
         print query1.next().content
