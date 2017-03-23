@@ -1,4 +1,4 @@
-from rules import cityRules
+
 import pymongo
 import json
 from pymongo import MongoClient
@@ -7,7 +7,7 @@ class Conection(object):
     @staticmethod
     def conected():
         Conection.client= MongoClient()
-        return Conection.client.wikicity
+        return Conection.client.Wikiciudad
 lista = []
 conexion= Conection()
 cliente = conexion.conected()

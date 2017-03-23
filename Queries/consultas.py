@@ -1,7 +1,5 @@
-from Conexion import connection
 
-conexion= connection.Conection()
-cliente = conexion.conected()
+
 def query1(comunidadAutonoma):
     consulta = [{'$match': {'autonomous_community':comunidadAutonoma}},{'$project' :{'name':1,'_id':0}}]
     return consulta
@@ -52,8 +50,6 @@ def query5(provincia):
     {'$group':{'_id':'$poi.kind'}},
     {'$unwind':'$_id'},
     {'$group':{'_id':'$_id'}}
-
-
 ]
     
     return consulta

@@ -1,5 +1,8 @@
 from Conexion import connection
 from rules import cityRules
+
+from Queries import consultas
+
 conexion= connection.Conection()
 cliente = conexion.conected()
 class city(object):
@@ -21,10 +24,36 @@ class city(object):
             cliente.city.insert(self.content)
 
         else:
+            if len(self.changed)>0:
+                pairs = {k: v for k, v in self.content.iteritems() if (k in self.changed)}
+                cliente.city.update({'_id': self.id}, {'$set': pairs})
+                self.changed = []
+    @staticmethod
+    def query(string):
+        consulta= cliente.city.aggregate(string)
+        return CityIterator(consulta)
 
-            pairs = {k: v for k, v in self.content.iteritems() if (k in self.changed)}
+class CityIterator(object):
+    def __init__(self,cursor):
+        self.cursor = cursor
+        self.__next__ = None
+    def prepareNext(self):
+        nextItem= next(self.cursor,None)
+        if(nextItem is not None):
+            self.__next__ = city(**nextItem)
+            return True
+        return False
+    def next(self):
+        return self.__next__
 
-            cliente.city.update({'_id': self.id}, {'$set': pairs})
-            self.changed = []
-    def query(self,number):
-        pass
+if __name__ == "__main__":
+    #dict = {'_id': 'ObjectID("67654646465sa65a76235373t")', 'name': 'Barcelona'}
+    #ciudad= city(**dict)
+    #ciudad.save()
+    consulta=cliente.city.find_one()
+    ciudad = city(**consulta)
+    #ciudad.update('name', 'Sevilla')
+    ciudad.save()
+    query1=ciudad.query(consultas.query1('Castilla y Leon'))
+    while(query1.prepareNext()):
+        print query1.next().content
